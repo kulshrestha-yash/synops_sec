@@ -1,0 +1,9 @@
+{
+  "avg_entropy": 3.607316104028544,
+  "std_entropy": 0.08448399040630662,
+  "avg_burst": 0.0,
+  "std_burst": 0.0,
+  "avg_event_rate": 250.0,
+  "avg_event_density": 0.5,
+  "std_event_density": 0.0
+}

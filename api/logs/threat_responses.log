@@ -1,0 +1,52 @@
+2026-06-13 17:32:31,154 - THREAT_RESPONSE - WARNING - THREAT DETECTED: Score=0.950, Level=CRITICAL, Target={'pid': 1234}
+2026-06-13 17:32:31,154 - THREAT_RESPONSE - INFO - [DRY RUN] Would isolate process 1234
+2026-06-13 17:32:31,155 - THREAT_RESPONSE - CRITICAL - ALERT: {'severity': 'CRITICAL', 'target': {'pid': 1234}, 'timestamp': '2026-06-13T17:32:31.154978', 'message': "CRITICAL THREAT: {'pid': 1234}"}
+2026-06-13 17:33:35,617 - THREAT_RESPONSE - WARNING - THREAT DETECTED: Score=0.950, Level=CRITICAL, Target={'pid': 1234}
+2026-06-13 17:33:35,617 - THREAT_RESPONSE - INFO - [DRY RUN] Would isolate process 1234
+2026-06-13 17:33:35,626 - THREAT_RESPONSE - CRITICAL - ALERT: {'severity': 'CRITICAL', 'target': {'pid': 1234}, 'timestamp': '2026-06-13T17:33:35.626732', 'message': "CRITICAL THREAT: {'pid': 1234}"}
+2026-06-14 01:07:58,887 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 01:07:58,898 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 01:07:58,970 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-14 01:07:58,980 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-14 01:08:02,720 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze "HTTP/1.1 200 OK"
+2026-06-14 01:08:02,728 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/status "HTTP/1.1 200 OK"
+2026-06-14 01:08:02,732 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/threats "HTTP/1.1 200 OK"
+2026-06-14 01:08:46,375 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 01:08:46,383 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 01:08:48,849 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze "HTTP/1.1 200 OK"
+2026-06-14 01:08:48,856 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/threats "HTTP/1.1 200 OK"
+2026-06-14 01:15:16,922 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 01:15:16,931 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 02:47:53,730 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 02:47:53,737 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 02:48:32,332 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 02:48:32,336 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 02:49:11,457 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 02:49:11,469 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 07:47:49,947 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 07:47:49,954 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 07:47:50,018 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-06-14 07:47:53,753 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze "HTTP/1.1 200 OK"
+2026-06-14 07:47:53,776 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze "HTTP/1.1 400 Bad Request"
+2026-06-14 07:47:54,553 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze/batch "HTTP/1.1 200 OK"
+2026-06-14 07:47:54,577 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze/batch "HTTP/1.1 400 Bad Request"
+2026-06-14 07:47:54,593 - THREAT_RESPONSE - INFO - HTTP Request: GET http://testserver/status "HTTP/1.1 200 OK"
+2026-06-14 07:47:54,988 - THREAT_RESPONSE - INFO - HTTP Request: POST http://testserver/analyze "HTTP/1.1 200 OK"
+2026-06-14 09:00:17,054 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:00:17,058 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:03:28,436 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:03:28,439 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:08:49,890 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:08:49,895 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:13:14,924 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:13:14,927 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:34:40,063 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:34:40,065 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:37:32,423 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:37:32,425 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:42:19,631 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:42:19,633 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 09:59:15,211 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 09:59:15,214 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2026-06-14 10:00:31,515 - THREAT_RESPONSE - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-06-14 10:00:31,520 - THREAT_RESPONSE - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.

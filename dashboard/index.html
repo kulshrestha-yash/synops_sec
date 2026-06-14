@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SynOps - Cyber Threat Detection</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Cyber Grid Background -->
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+    
+    <div class="container">
+      <!-- Cyber Header -->
+      <header class="cyber-header">
+        <div class="header-glow"></div>
+        <div class="header-content">
+          <div class="branding">
+            <div class="logo-hex">
+              <svg viewBox="0 0 100 100">
+                <polygon points="50,5 90,30 90,70 50,95 10,70 10,30" class="hex-shape"/>
+                <text x="50" y="60" class="hex-text">SO</text>
+              </svg>
+            </div>
+            <div>
+              <h1 class="glitch" data-text="SYNOPS">SYNOPS</h1>
+              <p class="tagline">// AI-POWERED THREAT DETECTION SYSTEM</p>
+            </div>
+          </div>
+          <div class="header-status">
+            <div class="status-indicator" id="connectionState">
+              <span class="status-pulse"></span>
+              <span id="connectionText">INITIALIZING</span>
+            </div>
+            <div class="mode-badge" id="modeBadge">
+              <span class="badge-value" id="modeValue">MOCK</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Grid -->
+      <main class="cyber-grid-layout">
+        <!-- System Metrics -->
+        <section class="cyber-panel metrics-panel">
+          <div class="panel-header">
+            <span class="panel-icon">⚡</span>
+            <h2>SYSTEM METRICS</h2>
+            <div class="panel-line"></div>
+          </div>
+          
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-glow"></div>
+              <div class="metric-icon">📊</div>
+              <div class="metric-content">
+                <span class="metric-label">ANALYZED</span>
+                <span class="metric-value" id="totalAnalyzed">0</span>
+              </div>
+            </div>
+            
+            <div class="metric-card threat-card">
+              <div class="metric-glow threat-glow"></div>
+              <div class="metric-icon">⚠️</div>
+              <div class="metric-content">
+                <span class="metric-label">THREATS</span>
+                <span class="metric-value" id="threatsDetected">0</span>
+              </div>
+            </div>
+            
+            <div class="metric-card">
+              <div class="metric-glow"></div>
+              <div class="metric-icon">🎯</div>
+              <div class="metric-content">
+                <span class="metric-label">THRESHOLD</span>
+                <span class="metric-value" id="threshold">0.75</span>
+              </div>
+            </div>
+            
+            <div class="metric-card">
+              <div class="metric-glow"></div>
+              <div class="metric-icon">🧠</div>
+              <div class="metric-content">
+                <span class="metric-label">ADAPTATIONS</span>
+                <span class="metric-value" id="adaptations">0</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Threat Analyzer -->
+        <section class="cyber-panel analyzer-panel">
+          <div class="panel-header">
+            <span class="panel-icon">🔬</span>
+            <h2>THREAT ANALYZER</h2>
+            <div class="panel-line"></div>
+          </div>
+
+          <div class="analyzer-content">
+            <!-- Tag Library -->
+            <div class="tag-library">
+              <label>
+                SYSCALL LIBRARY // Click to add
+                <span class="tooltip-trigger">?
+                  <span class="tooltip-text">Click any system call to add it to your sequence. Common calls: open, read, write for file ops; socket, connect for network; execve for execution.</span>
+                </span>
+              </label>
+              <div class="tag-grid" id="tagLibrary"></div>
+            </div>
+
+            <!-- Sequence Builder -->
+            <div class="sequence-builder">
+              <label>
+                SEQUENCE BUILDER
+                <span class="tooltip-trigger">?
+                  <span class="tooltip-text">Build your syscall sequence by clicking tags above. Click × on any tag to remove it. Use presets below for common attack patterns.</span>
+                </span>
+              </label>
+              <div class="tag-container" id="tagContainer">
+                <span class="placeholder-text">Click tags above to build sequence...</span>
+              </div>
+              <button class="btn-clear" id="clearBtn">CLEAR ALL</button>
+            </div>
+
+            <!-- Context Controls -->
+            <div class="context-controls">
+              <label>
+                CONTEXT FLAGS
+                <span class="tooltip-trigger">?
+                  <span class="tooltip-text">Set execution context: PRIVILEGED = admin/root access, EXTERNAL = network connection, TRUSTED = known safe application. These affect threat scoring.</span>
+                </span>
+              </label>
+              <div class="toggle-row">
+                <label class="cyber-toggle">
+                  <input type="checkbox" id="privilegedInput" />
+                  <span class="toggle-track"></span>
+                  <span class="toggle-label">PRIVILEGED</span>
+                </label>
+                <label class="cyber-toggle">
+                  <input type="checkbox" id="externalInput" checked />
+                  <span class="toggle-track"></span>
+                  <span class="toggle-label">EXTERNAL</span>
+                </label>
+                <label class="cyber-toggle">
+                  <input type="checkbox" id="knownGoodInput" />
+                  <span class="toggle-track"></span>
+                  <span class="toggle-label">TRUSTED</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-row">
+              <button class="btn-primary cyber-btn" id="analyzeBtn">
+                <span class="btn-glow"></span>
+                <span>⚡ ANALYZE THREAT</span>
+              </button>
+              <div class="preset-buttons">
+                <button class="btn-preset" data-preset="ransomware">RANSOMWARE</button>
+                <button class="btn-preset" data-preset="shell">REVERSE SHELL</button>
+                <button class="btn-preset" data-preset="normal">NORMAL</button>
+              </div>
+            </div>
+
+            <!-- Results Display -->
+            <div class="results-display" id="resultsDisplay">
+              <div class="result-header">
+                <span>⚡ ANALYSIS COMPLETE</span>
+                <div class="result-line"></div>
+              </div>
+              <div class="result-grid">
+                <div class="result-item">
+                  <span class="result-label">THREAT SCORE</span>
+                  <span class="result-value" id="scoreValue">--</span>
+                  <div class="threat-bar">
+                    <div class="threat-fill" id="threatFill"></div>
+                  </div>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">SEVERITY</span>
+                  <div class="severity-badge" id="severityBadge">--</div>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">ACTION</span>
+                  <div class="action-text" id="actionText">--</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Timeline Chart -->
+        <section class="cyber-panel chart-panel">
+          <div class="panel-header">
+            <span class="panel-icon">📈</span>
+            <h2>THREAT TIMELINE</h2>
+            <div class="panel-line"></div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="threatChart"></canvas>
+          </div>
+        </section>
+
+        <!-- Threat Table -->
+        <section class="cyber-panel table-panel">
+          <div class="panel-header">
+            <span class="panel-icon">🎯</span>
+            <h2>THREAT LOG</h2>
+            <div class="panel-line"></div>
+          </div>
+          <div class="table-wrapper">
+            <table class="cyber-table">
+              <thead>
+                <tr>
+                  <th>TIMESTAMP</th>
+                  <th>SCORE</th>
+                  <th>SEVERITY</th>
+                  <th>ACTION</th>
+                  <th>SEQUENCE</th>
+                </tr>
+              </thead>
+              <tbody id="threatTableBody">
+                <tr class="empty-row">
+                  <td colspan="5">// MONITORING FOR THREATS...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="cyber-footer">
+        <div class="footer-line"></div>
+        <p>SYNOPS v1.1.0 // NEUROMORPHIC THREAT DETECTION</p>
+      </footer>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="scanSound" preload="auto"><source src="../src/scan.mp3" type="audio/mpeg"></audio>
+    <audio id="clickSound" preload="auto"><source src="../src/click.mp3" type="audio/mpeg"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

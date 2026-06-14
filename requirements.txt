@@ -1,0 +1,29 @@
+# requirements.txt - Windows/Python 3.14 Compatible
+
+# ML Framework
+# NOTE: TensorFlow 2.15+ has Windows compatibility. If installation fails,
+# server will gracefully fall back to mock mode.
+tensorflow>=2.15.0
+
+# Core data & API
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
+psutil>=5.9.5
+
+# Web framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+
+# Testing
+pytest>=7.4.0
+httpx>=0.25.0
+
+# Optional (skip if they fail)
+# matplotlib>=3.8.0
+# seaborn>=0.13.0
+# flask>=3.0.0
+# kafka-python>=2.0.2
+# pefile>=2023.2.7
+# capstone>=5.0.0
